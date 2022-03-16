@@ -1,6 +1,6 @@
 export function passwordValidator(password) {
-  if (!password) return "OTP can't be empty."
-  if (password.length < 6) return 'OTP must be 6 characters long.'
-  if (password.length > 6) return 'OTP must be 6 characters long.'
+  if (!password) return <Text>OTP can't be empty.</Text>
+  if (password.length < 6) return <Text>OTP must be 6 characters long.</Text>
+  if (password.length > 6) return <Text>OTP must be 6 characters long.</Text>
   return ''
 }
